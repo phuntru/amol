@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                // 
+                git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/phuntru/amol.git'
             }
         }
         stage('Build') { 
