@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                // 
+                git 'https://github.com/phuntru/studentapp-ui.gitt' 
             }
         }
         stage('Build') { 
